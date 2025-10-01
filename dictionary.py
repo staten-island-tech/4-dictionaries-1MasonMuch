@@ -4,6 +4,6 @@ best_buy_items = [
      "price": 429.99, 
      "deoartment": "Televisions", 
      "description": "55-inch Ultra HD Smart TV with HDR and built-in streaming apps."
- } 
+} 
     ]
-best_buy_items[0]["name"]
+print(best_buy_items[0]["name"])
