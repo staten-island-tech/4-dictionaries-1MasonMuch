@@ -1,10 +1,11 @@
 mason_store = [ 
 
-{
+{ 
     "name": "RTX 5090",
     "price": 4000,
     "rating": "High End",
     "description": "32 GB of GDDR7 Memory and currently the latest of Nvidias 50 series graphics cards."
+
 },
 
 
@@ -14,7 +15,7 @@ mason_store = [
     "rating": "Mid End",
     "description": "Headphones with great noise cancellation features and compatible with all of Apples Products."
 },
-{
+{  
     "name": "Iphone 17 pro",
     "price": 1000,
     "rating": "High end",
