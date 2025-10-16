@@ -38,28 +38,28 @@ mason_store = [
 ]
 
 for index, item in enumerate(mason_store):
-    print(index, ':', item['name'])
+    print(index, ':', item['name'], item['price'])
+while "done" == False:
+    cart = input["Input what you want. type 'done' when done"]
 
-cart = input("Input your cart like this: 0, 1, 2, 3, 4 You CAN repeat numbers.")
 rtx = 0
 max = 0
 phone = 0
-xiyang = 0
-whalen = 0
-total = 0
-for char in cart:
-    if char == "0":
+xiyang = 0 
+total = 0 
+for i in cart:
+    if i == "0":
         rtx = rtx + 1
         total += + 4000
-    elif char == "1":
+    elif i == "1":
         max = max + 1
         total += 500
-    elif char == "2":
+    elif i == "2":
         phone = phone + 1
         total += 1000
-    elif char == "3":
+    elif i == "3":
         xiyang = xiyang + 1
         total += 1000000
-    elif char == "4":
+    elif i == "4":
         whalen = whalen +1
         total += 1
