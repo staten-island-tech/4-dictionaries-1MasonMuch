@@ -52,22 +52,9 @@ for index, item in enumerate(mason_store):
     
 while cart != "done" :
     cart = input("Input what you want. type 'done' when done")
-    for char in cart:
-        if char == "0":
-            rtx = rtx + 1
-            total += + 4000
-        elif char == "1":
-            max = max + 1
-            total += 500
-        elif char == "2":
-            phone = phone + 1
-            total += 1000
-        elif char == "3":
-            xiyang = xiyang + 1
-            total += 1000000
-        elif char == "4":
-            whalen = whalen + 1
-            total += 1
+    for i in mason_store:
+        if cart.lower() == mason_store.lower():
+
 
 print(f"You have orderd {rtx} RTX 5090(s), {max} Apple Airpods Max(s), {phone} Iphone 17 pro(s), {xiyang} Xiyang phone(s), and {whalen} Mr. Whalen Key Board(s)")
 print("__________________________________________________________________________________________________________________________________________________________________")
