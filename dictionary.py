@@ -32,34 +32,43 @@ mason_store = [
     "name": "Mr. Whalen Key Board",
     "price": 1,
     "rating": "Low End",
-    "description": "A keyboard with MR. Whalen's face on every key cap. Once every 100 presses th keyboard will talk about the world's issues."
+    "description": "A keyboard with MR. Whalen's face on every key cap. Once every 100 presses this keyboard will lower your HOS."
 }
 
 ]
-
-for index, item in enumerate(mason_store):
-    print(index, ':', item['name'], item['price'])
-while "done" == False:
-    cart = input["Input what you want. type 'done' when done"]
 
 rtx = 0
 max = 0
 phone = 0
 xiyang = 0 
+whalen = 0
 total = 0 
-for i in cart:
-    if i == "0":
-        rtx = rtx + 1
-        total += + 4000
-    elif i == "1":
-        max = max + 1
-        total += 500
-    elif i == "2":
-        phone = phone + 1
-        total += 1000
-    elif i == "3":
-        xiyang = xiyang + 1
-        total += 1000000
-    elif i == "4":
-        whalen = whalen +1
-        total += 1
+cart = ""
+
+
+for index, item in enumerate(mason_store):
+    print(index, ':', item['name'], item['price'], item ['description'], item['rating'])
+    
+    
+while cart != "done" :
+    cart = input("Input what you want. type 'done' when done")
+    for char in cart:
+        if char == "0":
+            rtx = rtx + 1
+            total += + 4000
+        elif char == "1":
+            max = max + 1
+            total += 500
+        elif char == "2":
+            phone = phone + 1
+            total += 1000
+        elif char == "3":
+            xiyang = xiyang + 1
+            total += 1000000
+        elif char == "4":
+            whalen = whalen + 1
+            total += 1
+
+print(f"You have orderd {rtx} RTX 5090(s), {max} Apple Airpods Max(s), {phone} Iphone 17 pro(s), {xiyang} Xiyang phone(s), and {whalen} Mr. Whalen Key Board(s)")
+print("__________________________________________________________________________________________________________________________________________________________________")
+print(f"your cart total is {total} dollas.")
